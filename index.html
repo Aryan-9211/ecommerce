@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ECOMMERCE WEBSITE</title>
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@900&display=swap" rel="stylesheet" />
+  <!-- ICONIFY LINK -->
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <!-- FONT AWESOME LINK -->
+  <script src="https://kit.fontawesome.com/c5a6d52e75.js" crossorigin="anonymous"></script>
+  <!-- CSS STYLESHEET -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- SPECIAL OFFER DIV -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <h3>Special offer for vaccinated people</h3>
+    <h4>
+      All the vaccinated people will get 15% cashback upto Rs.300 on minimun
+      shopping of Rs.1000
+    </h4>
+    <h4>
+      They have to upload their vaccinaton certificate while making payment.
+    </h4>
+  </div>
+
+
+
+
+  <!-- PAYMENT DIV -->
+  <div id="mySidenav1" class="sidenav1">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+    <hr />
+    <div class="cart-row">
+      <span class="item-name">Vegetables</span>
+      <span class="item-price">150</span>
+      <span class="item-quantity">1</span>
+      <span class="item-delete">delete</span>
+    </div>
+    <div class="total-price">
+      <span class="total">TOTAL</span>
+      <span class="total-p">Rs. 500</span>
+    </div>
+  </div>
+
+
+  <!-- SIGN UP FORM -->
+  <div id="mySidenav2" class="sidenav2">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+    <div class="right-contact1">
+      <h6 class="contact1-h6">Sign up</h6>
+      <form action="">
+        <input type="text" name="name" class="form-control" id="name_input" placeholder="Name" required="" />
+        <input type="email" name="email" class="form-control" id="name_input" placeholder="Email" required="" />
+        <input type="number" name="message" class="form-control" id="name_input" placeholder="Phone No." required="" />
+      </form>
+      <button class="contact-btn">Sign Up</button>
+    </div>
+  </div>
+
+
+  <!-- NAVBAR -->
+  <div class="navbar" id="navbar">
+    <div class="special">
+      <div>
+        Special offer for vaccinated People.
+        <div id="main">
+          <span style="font-size: 17px; cursor: pointer" onclick="openNav()">click here</span>
+        </div>
+      </div>
+    </div>
+    <div class="nav">
+      <a href="#" class="logo">
+        <h3 class="logo">
+          <span class="iconify" data-icon="el:shopping-cart-sign" data-inline="false"></span>Shopify
+        </h3>
+      </a>
+      <div class="search">
+        <i id="a" class="fas fa-search"></i>
+        <p class="search-p">SEARCH</p>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-items" id="nav-item-1"><a href="#home">Home</a></li>
+        <li class="nav-items"><a href="#skills">Categories</a></li>
+        <li class="nav-items"><a href="#contact">Contact</a></li>
+        <li class="nav-items" id="signin"><a href="#" onclick="openNav2()">Sign up</a></li>
+        <span class="iconify" id="cart" onclick="openNav1()" data-icon="bi:cart-fill" data-inline="false"></span>
+      </ul>
+    </div>
+  </div>
+
+  <!-- HOME SECTION-->
+  <div class="home" id="home">
+    <div class="home1">
+      <div class="home-content-1">
+        <div class="text-1">Start Shopping<br /></div>
+        <div class="text-2">
+          for
+          <span class="txt-type" data-wait="3000" data-words='["family.","home.", "friends."]'>code.</span>
+        </div>
+        <div class="text-3">
+          Explore from the widest range of products.<br />
+          At the lowest price.
+        </div>
+        <button class="home-btn">Explore</button>
+      </div>
+      <div class="home-content-2">
+        <img class="home-image" src="images/e8.png" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <!-- 3 PHOTOS -->
+  <div class="photos">
+    <img class="photos" src="images/category-1.jpg" alt="" />
+    <img class="photos" src="images/category-2.jpg" alt="" />
+    <img class="photos" src="images/category-3.jpg" alt="" />
+  </div>
+
+  <!-- SIGN UP PROMOTION -->
+  <div class="about" id="about">
+    <div class="about-section">
+      <div class="left-about">
+        <div class="text-4">Your online store is here for you.<br /></div>
+        <p class="text-5">
+          Signup to get your shopping delivered with you without having to pay
+          any extra money.
+        </p>
+        <button class="home-btn">Signup</button>
+      </div>
+      <div class="right-about">
+        <img class="about-image" src="images/e11.png" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <!-- CATEGORIES SECTION -->
+  <div class="skills" id="skills">
+    <h2 class="skills-title" id="skills-title">CATEGORIES</h2>
+    <hr class="skills-hr" />
+    <div class="skills-section">
+      <div class="left-skills">
+        <div class="skills-data skill1">
+          <div class="skills_names">
+            <i class="fas fa-apple-alt skills_icon"></i>
+            <span class="skills__name">Fruits and Vegetables</span>
+          </div>
+        </div>
+
+        <div class="skills-data skill2">
+          <div class="skills_names">
+            <i class="fas fa-shopping-basket skills_icon"></i>
+            <span class="skills__name">Grocerries & Staples</span>
+          </div>
+        </div>
+
+        <div class="skills-data skill3">
+          <div class="skills_names">
+            <i class="fas fa-seedling skills_icon"></i>
+            <span class="skills__name">Organic</span>
+          </div>
+        </div>
+
+        <div class="skills-data skill1">
+          <div class="skills_names">
+            <i class="fas fa-bread-slice skills_icon"></i>
+            <span class="skills__name">Breads</span>
+          </div>
+        </div>
+
+        <div class="skills-data skill1">
+          <div class="skills_names">
+            <i class="fas fa-egg skills_icon"></i>
+            <span class="skills__name">Eggs & Fish</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="middle-skills">
+        <img class="skills-image" src="images/9.svg" alt="" />
+      </div>
+
+      <div class="right-skills">
+        <div class="skills-data skill6">
+          <div class="skills_names">
+            <i class="fas fa-coffee skills_icon"></i>
+            <span class="skills__name">Coffee & Tea</span>
+          </div>
+        </div>
+
+        <div class="skills-data skill7">
+          <div class="skills_names">
+            <i class="fas fa-mortar-pestle skills_icon"></i>
+            <span class="skills__name">Spices</span>
+          </div>
+        </div>
+
+        <div class="skills-data skill8">
+          <div class="skills_names">
+            <i class="fas fa-tshirt skills_icon"></i>
+            <span class="skills__name">Shirts</span>
+          </div>
+        </div>
+
+        <div class="skills-data skill1">
+          <div class="skills_names">
+            <span class="iconify skills_icon" data-icon="ps:pant" data-inline="false"></span>
+            <span class="skills__name">Jeans</span>
+          </div>
+        </div>
+        <div class="skills-data skill1">
+          <div class="skills_names">
+            <span class="iconify skills_icon" data-icon="emojione-monotone:running-shoe" data-inline="false"></span>
+            <span class="skills__name">Shoes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FEATURED PRODUCTS SECTION -->
+  <div class="projects" id="projects">
+    <h2 class="projects-title" id="projects-title">FEATURED PRODUCTS</h2>
+    <hr class="projects-hr" />
+    <div class="projects-section">
+      <div class="left-projects">
+        <div class="project-container">
+          <h5 class="product-heading">Cornflakes</h5>
+          <img class="projects-img-1" src="images/e14.jpg" alt="" />
+          <p class="product-p">Rs. 150</p>
+          <button class="project-item">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="middle-projects">
+        <div class="project-container">
+          <h5 class="product-heading">Vegetables</h5>
+          <img class="projects-img-2" src="images/e15.jpg" alt="" />
+          <p class="product-p">Rs. 250</p>
+          <button class="project-item">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="right-projects">
+        <div class="project-container">
+          <h5 class="product-heading">Fruits</h5>
+          <img class="projects-img-3" src="images/e16.jpg" alt="" />
+          <p class="product-p">Rs. 350</p>
+          <button class="project-item">Add to cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects-section">
+      <div class="left-projects">
+        <div class="project-container">
+          <h5 class="product-heading">Cereals</h5>
+          <img class="projects-img-1" src="images/e22.jpg" alt="" />
+          <p class="product-p">Rs. 70</p>
+          <button class="project-item">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="middle-projects">
+        <div class="project-container">
+          <h5 class="product-heading">Cooking Oil</h5>
+          <img class="projects-img-1" src="images/e21.jpg" alt="" />
+          <p class="product-p">Rs. 150</p>
+          <button class="project-item">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="right-projects">
+        <div class="project-container">
+          <h5 class="product-heading">Chips</h5>
+          <img class="projects-img-1" src="images/e23.jpg" alt="" />
+          <p class="product-p">Rs. 40</p>
+          <button class="project-item">Add to cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects-section">
+      <div class="left-projects">
+        <div class="project-container">
+          <h5 class="product-heading">Shirts</h5>
+          <img class="projects-img-1" src="images/e17.jpg" alt="" />
+          <p class="product-p">Rs. 999</p>
+          <button class="project-item">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="middle-projects">
+        <div class="project-container">
+          <h5 class="product-heading">Jeans</h5>
+          <img class="projects-img-1" src="images/e24.jpg" alt="" />
+          <p class="product-p">Rs. 1700</p>
+          <button class="project-item">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="right-projects">
+        <div class="project-container">
+          <h5 class="product-heading">Shoes</h5>
+          <img class="projects-img-1" src="images/e19.jpg" alt="" />
+          <p class="product-p">Rs. 1999</p>
+          <button class="project-item">Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <div class="contact" id="contact">
+    <h2 class="contact-title" id="contact-title">Contact Us</h2>
+    <hr class="contact-hr" />
+    <div class="contact-section">
+      <div class="left-contact">
+        <img class="contact-img" src="images/8.svg" alt="" />
+      </div>
+      <div class="right-contact">
+        <h6 class="contact-h6">Send Message</h6>
+        <form action="">
+          <input type="text" name="name" class="form-control" id="name_input" placeholder="Name" required="" />
+          <input type="email" name="email" class="form-control" id="name_input" placeholder="Email" required="" />
+          <input type="text" name="message" class="form-control" id="name_input" placeholder="Message" required="" />
+        </form>
+        <button class="contact-btn">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer0">
+
+
+      <div class="footer1">
+        <a href="#" class="logo">
+          <h1 class="footer-logo">
+            <span class="iconify" data-icon="el:shopping-cart-sign" data-inline="false"></span>Shopify
+          </h1>
+        </a>
+        <div class="download">
+          <div class="download1">
+            <span class="iconify" data-icon="bx:bxl-play-store" data-inline="false"></span>
+            Google Play
+          </div>
+          <div class="download1">
+            <span class="iconify" data-icon="ant-design:apple-filled" data-inline="false"></span>
+            App Store
+          </div>
+        </div>
+      </div>
+
+
+      <div class="footer1">
+        <a href="#" class="logo">
+          <h2 class="footer-logo">Quick links</h2>
+        </a>
+        <div class="download">
+          <div class="download2">
+            <ul class="footerul">
+              <li class="footerli">About Us</li>
+              <li class="footerli">Contact Us</li>
+              <li class="footerli">Careers</li>
+              <li class="footerli">Stories</li>
+            </ul>
+          </div>
+          <div class="download2">
+            <ul class="footerul">
+              <li class="footerli">Offers</li>
+              <li class="footerli">Gifts</li>
+              <li class="footerli">Rewards</li>
+              <li class="footerli">Terms</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="footer1">
+        <a href="#" class="logo">
+          <h2 class="footer-logo">Let Us Help</h2>
+        </a>
+        <div class="download">
+          <div class="download2">
+            <ul class="footerul">
+              <li class="footerli">Security</li>
+              <li class="footerli">Privacy</li>
+              <li class="footerli">Terms</li>
+              <li class="footerli">Conditions</li>
+            </ul>
+          </div>
+          <div class="download2">
+            <ul class="footerul">
+              <li class="footerli">Products</li>
+              <li class="footerli">Return Policy</li>
+              <li class="footerli">Social Media</li>
+              <li class="footerli">FAQ </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <hr class="footerhr" />
+
+    <div>
+      <h3>Made with Love by Aryan Mangla, June 2021</h3>
+    </div>
+
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>
